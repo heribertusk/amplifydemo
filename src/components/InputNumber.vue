@@ -10,7 +10,10 @@
       inputmode="numeric"
       :value="modelValue"
       @input="
-        $emit('update:modelValue', ($event.target as HTMLInputElement).value)
+        $emit(
+          'update:modelValue',
+          parseInt(($event.target as HTMLInputElement).value)
+        )
       "
       class="block py-1.5 px-3 mt-2 w-full text-gray-700 bg-white rounded-lg border border-gray-200 focus:border-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none placeholder-gray-400/70"
     />
