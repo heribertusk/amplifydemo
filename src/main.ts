@@ -1,5 +1,7 @@
 import './assets/index.css'
 
+import './init.ts'
+
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
