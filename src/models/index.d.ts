@@ -9,12 +9,12 @@ import { LazyLoading, LazyLoadingDisabled, AsyncCollection, AsyncItem } from "@a
 type EagerFamily = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Family, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
+    readOnlyFields: 'updatedAt';
   };
   readonly id: string;
   readonly headName: string;
   readonly memberCount?: number | null;
-  readonly description?: string | null;
+  readonly address?: string | null;
   readonly members?: (FamilyMember | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -23,12 +23,12 @@ type EagerFamily = {
 type LazyFamily = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<Family, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
+    readOnlyFields: 'updatedAt';
   };
   readonly id: string;
   readonly headName: string;
   readonly memberCount?: number | null;
-  readonly description?: string | null;
+  readonly address?: string | null;
   readonly members: AsyncCollection<FamilyMember>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
@@ -43,7 +43,7 @@ export declare const Family: (new (init: ModelInit<Family>) => Family) & {
 type EagerFamilyMember = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<FamilyMember, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
+    readOnlyFields: 'updatedAt';
   };
   readonly id: string;
   readonly name: string;
@@ -56,7 +56,7 @@ type EagerFamilyMember = {
 type LazyFamilyMember = {
   readonly [__modelMeta__]: {
     identifier: ManagedIdentifier<FamilyMember, 'id'>;
-    readOnlyFields: 'createdAt' | 'updatedAt';
+    readOnlyFields: 'updatedAt';
   };
   readonly id: string;
   readonly name: string;
