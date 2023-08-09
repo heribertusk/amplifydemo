@@ -20,7 +20,7 @@ export default {
   },
   created() {
     this.subscription = DataStore.observe(Family).subscribe((msg) => {
-      // console.log(msg.model, msg.opType, msg.element);
+      console.log(msg.model, msg.opType, msg.element);
       this.onQuery();
     });
     this.onQuery();
@@ -38,7 +38,7 @@ export default {
         createdAt: null,
       },
       benefactors: [] as Family[],
-      subscription: {},
+      subscription: {} as any,
     };
   },
   methods: {
