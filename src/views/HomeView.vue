@@ -97,7 +97,7 @@ export default {
         </div>
       </div>
       <div class="mt-10">
-        <div class="flex gap-2">
+        <div class="flex justify-between">
           <h2 class="font-2xl">List Data</h2>
           <button
             class="py-2 px-5 text-sm font-medium text-white bg-red-600 rounded-xl duration-100 hover:bg-red-700"
