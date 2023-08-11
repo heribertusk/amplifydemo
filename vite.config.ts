@@ -15,7 +15,7 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png", "mask-icon.svg"],
       manifest: {
         name: "AmplifyDemo",
-        short_name: "MyApp",
+        short_name: "AmplifyDemo",
         description: "Amplify PWA Demo App",
         theme_color: "#ffffff",
         icons: [
